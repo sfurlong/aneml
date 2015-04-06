@@ -1,0 +1,21 @@
+This is a sample stack for EAN (Express, Angular, Node)
+
+The framework was constructed using this website as a guide: 
+http://expressjs.com/starter/installing.html
+
+There are two components:
+1.  Node.js Server.  This code is in ./myapp/furserver.js
+	To start the server type: "node furserver.js"
+	It will now be listening at: 3000 
+	Port is specified in furserver.js
+
+2.  Angular JS Client.  This code is in ./index.html and ./script.js
+
+3.  Install MarkLogic Node.js development client
+	sudo npm install marklogic
+	*See detailed instructions in the ML node-dev.pdf Developers Documentation
+
+TO RUN THE DEMO:
+1. Run the server node ./myapp/furserver.js
+
+2. Open Index.html in a browser window
