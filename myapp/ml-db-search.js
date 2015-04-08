@@ -12,38 +12,17 @@ module.exports = {
 
 		var db = marklogic.createDatabaseClient(my.connInfo); 
 		var qb = marklogic.queryBuilder;
-		//var ret = '';
-/*
-		db.documents.query(qb.where(qb.parsedFrom('sfurlong'))).result( function(documents) {
-				console.log('Matches query:');
-		        documents.forEach( function(document) {
-		        	ret += '\nURI: ' + JSON.parse(JSON.stringify(document.uri));
-		        	console.log('\nURI: ' + document.uri);
-					console.log('Name: ' + document.content.name); 
-				});
-		});
-*/		
+
 		var ret = '';
 		db.documents.query(qb.where(qb.parsedFrom(searchTerm))).result( function(documents) {
-		        documents.forEach( function(document) {
-		        	console.log(document.content);
-		        	ret += '\nURI: ' + JSON.stringify(document.content);
+		        //documents.forEach( function(document) {
+		        	//console.log(document.content);
+		        	//ret += '\nURI: ' + JSON.stringify(document.content);
+		        	ret = documents;
 //					console.log('Name: ' + document.content.name); 
-				});
+				//});
 			callback(ret);
 		});
-/*
-		 {
-				console.log('Matches query:');
-		        documents.forEach( function(document) {
-		        	ret += '\nURI: ' + JSON.parse(JSON.stringify(document.uri));
-		        	console.log('\nURI: ' + document.uri);
-					console.log('Name: ' + document.content.name); 
-				});
-		});
-		console.log('WHTAT THE F: ' + ret);
-		return 'HELLLOOOOOOOOO ' + ret;
-*/
 	}, 
 	
 	err : function(error) {

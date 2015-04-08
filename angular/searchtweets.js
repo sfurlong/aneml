@@ -14,9 +14,7 @@ angular.module("mainModule", [])
 
     $scope.getCallJSON = function () {
       var params = {
-        jsonObjParam: {
-          param1: $scope.getJSONParam1
-        }
+        term: $scope.getJSONParam1
       };
 
       var config = {
@@ -34,13 +32,14 @@ angular.module("mainModule", [])
           // The $http service automatically converts the response to a
 			// JavaScript
           // object whenever it sees that it looks like a JSON string.
+          //console.log(data);
           data = jsonFilter(data);
 
-          $scope.getCallJSONResult = logResult("GET SUCCESS", data, status, headers, config);
+          $scope.getCallJSONResult = logResult("GET SUCCESS2", data, status, headers, config);
         })
         .error(function (data, status, headers, config)
         {
-          $scope.getCallJSONResult = logResult("GET ERROR", data, status, headers, config);
+          $scope.getCallJSONResult = logResult("GET ERROR2", data, status, headers, config);
         });
     };
   });

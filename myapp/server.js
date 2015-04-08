@@ -5,19 +5,28 @@ var app = express();
 
 var mlapp = require('./ml-db-search.js');
 
+app.use(express.static('public'));
+
+app.get('/', function(req, res) {
+  res.render('searchtweets.html');
+});
+
 // respond with "Hello World!" on the homepage
 app.get('/search/', function (req, res) {
-  //console.log('received GET: ' + req.parameterCount());
-  //console.log(req);
-  console.log(req.params.term);
-  console.log(req.body);
-  console.log(req.query.term);
+
+  //DEBUG:  Print out all the query key/value pairs
+  for (var propName in req.query) {
+      if (req.query.hasOwnProperty(propName)) {
+          console.log(propName, req.query[propName]);
+      }
+  }
+
+  //Call my MarkLogic query wrapper.
   mlapp.search(req.query.term, function(queryDat) {
     console.log(queryDat);
     res.send(queryDat);
   });
 
-  //res.send('Query Results for: ');
 });
 
 // accept POST request on the homepage
