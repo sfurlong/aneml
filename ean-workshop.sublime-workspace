@@ -23,6 +23,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "myapp/public/searchtweets.html",
+			"settings":
+			{
+				"buffer_size": 929,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "myapp/public/demo.html",
+			"settings":
+			{
+				"buffer_size": 781,
+				"line_ending": "Unix",
+				"name": "<! DOCTYPE html >"
+			}
+		},
+		{
+			"contents": "angular.module(\"mainModule\", [])\n  .controller(\"mainController\", function ($scope, $http, jsonFilter)\n  {\n    var serverURL = \"http://localhost:3000\";\n\n    var logResult = function (str, data, status, headers, config, cnt)\n    {\n      return str + \"\\n\\n\" +\n        \"Num Returned: \" + cnt + \"\\n\\n\" +\n        \"data: \" + '\\n\\n' + data + \"\\n\\n\" +\n        \"status: \" + status + \"\\n\\n\" +\n        \"headers: \" + jsonFilter(headers()) + \"\\n\\n\" +\n        \"config: \" + jsonFilter(config);\n    };\n\n    $scope.getCallJSON = function () {\n      var params = {\n        term: $scope.getJSONParam1\n      };\n\n      var config = {\n        params: params\n      };\n      \n\n      $http.get(serverURL+\"/search\", config)\n        .success(function (data, status, headers, config)\n        {\n          var tweetCnt = 0;\n          var ret = '';\n          data.forEach( function(document) {\n              console.log(document.content.text);\n              console.log(document.content.user.friends_count);\n              console.log(document.content.user.screen_name);\n              console.log(document.content.user.name);\n              console.log(document.content.user.location);\n              ret += document.content.text + '\\n' +\n                document.content.user.friends_count + '\\n' +\n                document.content.user.screen_name + '\\n' +\n                document.content.user.name + '\\n' +\n                document.content.user.location + \n                  '\\n---------------------------------\\n';\n              tweetCnt++;\n          });\n          \n          data = ret;\n          //data = jsonFilter(data);\n\n          $scope.getCallJSONResult = logResult(\"GET SUCCESS\", data, status, headers, config, tweetCnt);\n        })\n        .error(function (data, status, headers, config)\n        {\n          $scope.getCallJSONResult = logResult(\"GET ERROR2\", data, status, headers, config, 0);\n        });\n    };\n  });",
+			"file": "myapp/public/searchtweets.js",
+			"file_size": 2326,
+			"file_write_time": 130730231030000000,
+			"settings":
+			{
+				"buffer_size": 1897,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "myapp/public/hello.html",
+			"settings":
+			{
+				"buffer_size": 334,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -75,11 +111,7 @@
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/images",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/javascripts",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/stylesheets",
-		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic",
-		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/bluebird",
-		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/bluebird/js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/qs/lib"
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/stylesheets"
 	],
 	"file_history":
 	[
@@ -139,8 +171,129 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "myapp/public/searchtweets.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								483
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "myapp/public/demo.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								743,
+								743
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "<! DOCTYPE html >",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "myapp/public/searchtweets.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "myapp/public/hello.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
