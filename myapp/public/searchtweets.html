@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
   <script src="searchtweets.js"></script>
-  <link href ="bootstrap.css" rel="stylesheet" /> 
-  <link href ="bootstrap-theme.css" rel="stylesheet"/>
+  <link href="bootstrap.css" rel="stylesheet" />
+  <link href="bootstrap-theme.css" rel="stylesheet" />
 
 
   <style>
-    .logTextArea
-    {
+    .logTextArea {
       width: 600px;
       height: 500px;
       border: 3px solid #cccccc;
       padding: 5px;
       font-family: Tahoma, sans-serif;
     }
-    .body
-    {
+
+    .body {
       margin: 20px;
-    }    
+    }
   </style>
 
 </head>
@@ -29,8 +29,13 @@
 
   <div ng-controller="mainController">
     <h3>Search for Tweets in MarkLogic database</h3>
-    <label>Search Term(s): <input type="text" ng-model="getJSONParam1" ng-init="getJSONParam1 = 'term value'" /></label>
-    <button ng-click="getCallJSON()">Search</button><br/><br/><br/>
+    <label>Search Term(s):
+      <input type="text" ng-model="getJSONParam1" ng-init="getJSONParam1 = 'term value'" />
+    </label>
+    <button ng-click="getCallJSON()">Search</button>
+    <br/>
+    <br/>
+    <br/>
     <textarea class="logTextArea">{{getCallJSONResult}}</textarea>
   </div>
 </body>
