@@ -23,14 +23,9 @@ angular.module("mainModule", [])
 
       $http.get(serverURL + "/search", config)
         .success(function(data, status, headers, config) {
-          // Since the data returned by the server is a JSON object in this
-          // case,
-          // I use the json filter to output it as a string for debugging
-          // purposes.
           // The $http service automatically converts the response to a
-          // JavaScript
-          // object whenever it sees that it looks like a JSON string.
-          //console.log(data);
+          // JavaScript object whenever it sees that it looks 
+          // like a JSON string.
           var tweetCnt = 0;
           var ret = '';
           data.forEach(function(document) {

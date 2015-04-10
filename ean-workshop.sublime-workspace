@@ -23,49 +23,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "myapp/public/searchtweets.html",
-			"settings":
-			{
-				"buffer_size": 944,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "myapp/public/demo.html",
-			"settings":
-			{
-				"buffer_size": 828,
-				"line_ending": "Unix",
-				"name": "<! DOCTYPE html >"
-			}
-		},
-		{
-			"file": "myapp/public/searchtweets.js",
-			"settings":
-			{
-				"buffer_size": 2290,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nSublimeLinter-jshint:\n--------------------\n\n  SublimeLinter-jshint\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to jshint.\n  \n  ** IMPORTANT! **\n  \n  Before this plugin will activate, you *must*\n  follow the installation instructions here:\n  \n  https://github.com/SublimeLinter/SublimeLinter-jshint\n  \n  ",
-			"settings":
-			{
-				"buffer_size": 405,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		},
-		{
-			"file": "myapp/public/hello.html",
-			"settings":
-			{
-				"buffer_size": 343,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -75,9 +32,17 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "package",
+		"last_filter": "pa",
 		"selected_items":
 		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
 			[
 				"package",
 				"Package Control: Install Package"
@@ -122,9 +87,18 @@
 	],
 	"file_history":
 	[
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.html",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/googlemapapi.html",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.js",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/MarkLogic/MarkLogic.sublime-settings",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/hello.html",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/demo.html",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/sfurlong/ML-Dev/ean-workshop/angular/searchtweets.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/server.js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/angular/searchtweets.html",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/module.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/ml-db-search.js",
@@ -140,7 +114,6 @@
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/my-connection.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/package.json",
 		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/MarkLogic.sublime-settings",
-		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/MarkLogic/MarkLogic.sublime-settings",
 		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/MySignaturePlugin.sublime-settings"
 	],
 	"find":
@@ -178,160 +151,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "myapp/public/searchtweets.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 944,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "myapp/public/demo.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 828,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"auto_name": "<! DOCTYPE html >",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "myapp/public/searchtweets.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2290,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								290,
-								290
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 405,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								399,
-								346
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "myapp/public/hello.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 343,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
