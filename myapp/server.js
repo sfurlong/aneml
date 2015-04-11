@@ -1,11 +1,12 @@
 //See Tutorial at http://expressjs.com/
+"use strict";
 
-var express = require('express');
+var express = require("express");
 var app = express();
 
-var mlapp = require('./ml-db-search.js');
+var mlapp = require("./ml-db-search.js");
 
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 app.get('/', function(req, res) {
   res.render('searchtweets.html');

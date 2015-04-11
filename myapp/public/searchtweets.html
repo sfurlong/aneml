@@ -22,7 +22,7 @@
       margin: 20px;
     }
     .googlemap {
-      width: 600px;
+      width: 1200px;
       height: 500px;
       border: 3px solid #cccccc;
       padding: 5px;
@@ -37,7 +37,6 @@
     <script type="text/javascript">
       "use strict";
 
-      var service;
       var map;
       var geocoder;
       var myLatlng = new google.maps.LatLng(38.2562, -96.0650);
@@ -48,36 +47,13 @@
           center: myLatlng,
           zoom: 2
         };
-        map = new google.maps.Map(document.getElementById('map-canvas'),
+        
+        map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:'Hello World!'
-        });
-
-        // To add the marker to the map, call setMap();
-        marker.setMap(map);
-
-        getAddressGeoCode("Paris");
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
 
-      //Plot Tweet Locations!
-      function getAddressGeoCode(addressStr) {
-          var address = addressStr;
-          geocoder.geocode( { 'address': address}, function(results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-              map.setCenter(results[0].geometry.location);
-              var marker = new google.maps.Marker({
-                  map: map,
-                  position: results[0].geometry.location
-              });
-            } else {
-              alert("Geocode was not successful for the following reason: " + status);
-            }
-          });
-      }
+      google.maps.event.addDomListener(window, "load", initialize);
+
 
     </script>
 
@@ -87,16 +63,24 @@
 
   <div ng-controller="mainController">
     <h3>Search for Tweets in MarkLogic database</h3>
+    
     <label>Search Term(s):
-      <input type="text" ng-model="getJSONParam1" ng-init="getJSONParam1 = 'term value'" />
+      <input type="text" ng-model="searchTermParam" ng-init="searchTermParam = 'term value'" />
     </label>
-    <button ng-click="getCallJSON()">Search</button>
-    <br/>
-    <br/>
-    <br/>
+    <button ng-click="searchTweets()">Search</button>
+    <br/><br/><br/>
     
-    <textarea class="logTextArea">{{getCallJSONResult}}</textarea>
-    
+    <table>
+    <tr>
+    <td>
+    <textarea class="logTextArea">{{getSearchTweetResults}}</textarea>
+    </td>
+    <td>
+    <textarea class="logTextArea">{{getRawSearchTweetResults}}</textarea>
+    </td>
+    </tr>
+    </table>
+
     <div id="map-canvas" class="googlemap"></div>
 
   </div>

@@ -15,12 +15,7 @@ module.exports = {
 
     var ret = '';
     db.documents.query(qb.where(qb.parsedFrom(searchTerm))).result(function(documents) {
-      //documents.forEach( function(document) {
-      //console.log(document.content);
-      //ret += '\nURI: ' + JSON.stringify(document.content);
       ret = documents;
-      //					console.log('Name: ' + document.content.name);
-      //});
       callback(ret);
     });
   },
