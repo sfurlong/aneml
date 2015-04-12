@@ -10,14 +10,21 @@ angular.module("mainModule", [])
         "headers: " + jsonFilter(headers()) + "\n\n" +
         "config: " + jsonFilter(config);
     };
+    var mapMarkers = [];
 
     /************************************************
     *  FUNCTION: getAddressGeoCode
     *  Plot Tweet Locations on the Map!!
     *************************************************/
     function getAddressGeoCode(addressStr) {
-        var address = addressStr;
-        geocoder.geocode( { 'address': address}, function(results, status) {
+        //If the parameter is an empty string, just return
+        if (!addressStr.trim()) {
+          console.log(addressStr);
+          return;
+        }
+
+        //Use Google API to get location and mark it on the map.
+        geocoder.geocode( { 'address': addressStr}, function(results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
             window.map.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
@@ -25,8 +32,9 @@ angular.module("mainModule", [])
                 position: results[0].geometry.location,
                 title: addressStr
             });
+            mapMarkers.push(marker);
           } else {
-            alert("Geocode was not successful for the following reason: " + status);
+            alert("Geocode was not successful for the following reason: {" + addressStr + "}\n"+ status);
           }
         });
     }
@@ -47,6 +55,13 @@ angular.module("mainModule", [])
         params: params
       };
 
+      //Clear all existing map markers
+      if (mapMarkers.length > 1) {
+        for (var i = 0; i < mapMarkers.length; i++) {
+          mapMarkers[i].setMap(null);
+        }
+      }
+      
       //REST GET Call to the Node.JS server which will in turn call
       //the MarkLogic database javascript api.
       $http.get(serverURL + "/search", config)
