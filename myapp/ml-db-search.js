@@ -1,4 +1,4 @@
-// Search for documents about mammals, using Query By Example. 
+// Search for documents that contain tweets, using Query By Example. 
 // The query returns an array of document descriptors, one per
 // matching document. The descriptor includes the URI and the
 // the contents of each document.
@@ -13,11 +13,29 @@ module.exports = {
     var db = marklogic.createDatabaseClient(my.connInfo);
     var qb = marklogic.queryBuilder;
 
-    var ret = '';
-    db.documents.query(qb.where(qb.parsedFrom(searchTerm))).result(function(documents) {
-      ret = documents;
-      callback(ret);
+    var ret = [];
+    var tweetCnt=0;
+    db.documents.query(qb.where(qb.parsedFrom(searchTerm)).slice(1,100))
+      .result(function(documents) {
+          documents.forEach(function(document) {
+            ret.push(document);
+            tweetCnt++;
+          });
+          console.log("num tweets: " + tweetCnt);
+          callback(ret);
+      });
+/*
+    db.documents.query(qb.where(qb.parsedFrom(searchTerm))).stream()
+      .on('data', function(document) {
+        console.log('data :' + JSON.stringify(document));
+        ret.push(document);
+    }).on('end', function() {
+        console.log('REACHED THE END');
+    }).on('err', function(error) {
+        console.log('ERROR');
     });
+    callback(ret);
+  */
   },
 
   err: function(error) {

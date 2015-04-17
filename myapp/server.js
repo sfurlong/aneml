@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
   res.render('searchtweets.html');
 });
 
-// respond with "Hello World!" on the homepage
+// SEARCH for Tweets!
 app.get('/search/', function(req, res) {
 
   //DEBUG:  Print out all the query key/value pairs

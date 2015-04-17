@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"si",
+				"size()	utils.js"
+			],
+			[
 				"param",
 				"parameterCount(fn)	promisify.js"
 			],
@@ -83,31 +87,41 @@
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/images",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/javascripts",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/stylesheets"
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/etc/marklogic-template",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/etc/marklogic-template/static",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/lib",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/bluebird/js",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/core-util-is/lib",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/qs/lib",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/node_modules/www-authenticate/lib"
 	],
 	"file_history":
 	[
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.html",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/googlemapapi.html",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.js",
-		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
-		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
-		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/MarkLogic/MarkLogic.sublime-settings",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/hello.html",
+		"/Users/sfurlong/ML-Dev/ean-workshop/ean-workshop.sublime-project",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/ml-db-search.js",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/README.md",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.js",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/server.js",
+		"/Users/sfurlong/ML-Dev/ean-workshop/angular/script.js",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/googlemapapi.html",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/HTMLBeautify.sublime-settings",
+		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/MarkLogic/MarkLogic.sublime-settings",
 		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/demo.html",
-		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/sfurlong/ML-Dev/ean-workshop/angular/searchtweets.js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/server.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/angular/searchtweets.html",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/module.js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/ml-db-search.js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/angular/script.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/README.doc",
 		"/Users/sfurlong/ML-Dev/ean-workshop/angular/index.html",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/app.js.old",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/tweet-deck-search.js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/ean-workshop.sublime-project",
 		"/Users/sfurlong/ML-Dev/ean-workshop/.project",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/furserver.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/README",
@@ -132,6 +146,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"querydocuments",
+			"query",
+			"getSearchTweetResults",
 			"term",
 			"req"
 		],
