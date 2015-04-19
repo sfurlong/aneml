@@ -68,14 +68,20 @@
       <input type="text" ng-model="searchTermParam" ng-init="searchTermParam = 'term value'" />
     </label>
     <button ng-click="searchTweets()">Search</button>
+    <br>
+    <label>Plot Tweet Locations:
+    <input type="checkbox" ng-model="checkboxModel.value1" ng-init="checkboxModel.value1=false" />
+    </label>
     <br/><br/><br/>
     
     <table>
     <tr>
     <td>
+    <b>Tweet Summaries</b><br>
     <textarea class="logTextArea">{{getSearchTweetResults}}</textarea>
     </td>
     <td>
+    <b>Raw Tweet Data</b><br>
     <textarea class="logTextArea">{{getRawSearchTweetResults}}</textarea>
     </td>
     </tr>

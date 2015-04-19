@@ -11,6 +11,7 @@ angular.module("mainModule", [])
         "config: " + jsonFilter(config);
     };
     var mapMarkers = [];
+    var places = {};
 
     /************************************************
     *  FUNCTION: getAddressGeoCode
@@ -77,14 +78,23 @@ angular.module("mainModule", [])
             $scope.getSearchTweetResults += "Name: " + document.content.user.name + '\n';
             $scope.getSearchTweetResults += "Location: " + document.content.user.location + '\n';
             $scope.getSearchTweetResults += '\n---------------------------------\n\n';
-            getAddressGeoCode(document.content.user.location);
+            places[document.content.user.location] = document.content.user.location;
             tweetCnt++;
           });
+
+          var place;
+          for (place in places) {
+            console.log(place);
+            if ($scope.checkboxModel.value1) {
+              getAddressGeoCode(place);
+            }
+          }
 
           $scope.getSearchTweetResults = "Num Tweets Returned: " + tweetCnt + '\n\n' + $scope.getSearchTweetResults
           $scope.getRawSearchTweetResults = jsonFilter(data);
           window.global = jsonFilter(data);
         })
+
         .error(function(data, status, headers, config) {
           $scope.getSearchTweetResults = logResult("GET ERROR", data, status, headers, config);
         });
