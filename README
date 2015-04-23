@@ -1,4 +1,4 @@
-This is a sample stack for ANEML (Angular, Node.js, Express, and MarkLogic) pronounced "animal"
+This is a sample application build on the ANEML stack (Angular, Node.js, Express, and MarkLogic) pronounced "animal".
 
 The framework was constructed using this website as a guide: 
 http://expressjs.com/starter/installing.html
