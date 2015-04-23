@@ -1,13 +1,13 @@
-This is a sample stack for EAN (Express, Angular, Node)
+This is a sample stack for ANEML (Angular, Node.js, Express, and MarkLogic) pronounced "animal"
 
 The framework was constructed using this website as a guide: 
 http://expressjs.com/starter/installing.html
 
 There are two components:
-1.  Node.js Server.  This code is in ./myapp/furserver.js
-	To start the server type: "node furserver.js"
+1.  Node.js Server.  This code is in ./myapp/server.js
+	To start the server type: "node server.js"
 	It will now be listening at: 3000 
-	Port is specified in furserver.js
+	Port is specified in server.js
 
 2.  Angular JS Client.  This code is in ./index.html and ./script.js
 
@@ -16,6 +16,6 @@ There are two components:
 	*See detailed instructions in the ML node-dev.pdf Developers Documentation
 
 TO RUN THE DEMO:
-1. Run the server node ./myapp/furserver.js
+1. Run the server node ./myapp/server.js
 
 2. Open Index.html in a browser window
