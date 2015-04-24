@@ -31,7 +31,7 @@
 			"file": "myapp/public/searchtweets.js",
 			"settings":
 			{
-				"buffer_size": 3878,
+				"buffer_size": 3866,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,15 +39,7 @@
 			"file": "myapp/public/searchtweets.html",
 			"settings":
 			{
-				"buffer_size": 2167,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "angular/searchtweets.html",
-			"settings":
-			{
-				"buffer_size": 658,
+				"buffer_size": 2240,
 				"line_ending": "Unix"
 			}
 		}
@@ -112,11 +104,12 @@
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/images",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/javascripts",
 		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules",
-		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic",
 		"/Users/sfurlong/ML-Dev/ean-workshop/node_modules/marklogic/lib"
 	],
 	"file_history":
 	[
+		"/Users/sfurlong/ML-Dev/ean-workshop/README",
+		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/bootstrap.css",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/searchtweets.html",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/public/hello.html",
 		"/Users/sfurlong/ML-Dev/ean-workshop/ean-workshop.sublime-project",
@@ -142,7 +135,6 @@
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/tweet-deck-search.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/.project",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/furserver.js",
-		"/Users/sfurlong/ML-Dev/ean-workshop/README",
 		"/Users/sfurlong/ML-Dev/ean-workshop/myapp/my-connection.js",
 		"/Users/sfurlong/ML-Dev/ean-workshop/package.json",
 		"/Users/sfurlong/Library/Application Support/Sublime Text 3/Packages/User/MarkLogic.sublime-settings",
@@ -164,6 +156,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"checkbox",
 			"querydocuments",
 			"query",
 			"getSearchTweetResults",
@@ -186,7 +179,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -195,15 +188,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3878,
+						"buffer_size": 3866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3412,
-								3412
+								1324,
+								1324
 							]
 						],
 						"settings":
@@ -213,11 +206,11 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 112.0,
-						"translation.y": 1001.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -226,50 +219,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2167,
+						"buffer_size": 2240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1981,
-								1981
+								1691,
+								1691
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 966.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "angular/searchtweets.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
