@@ -24,18 +24,6 @@ module.exports = {
           console.log("num tweets: " + tweetCnt);
           callback(ret);
       });
-/*
-    db.documents.query(qb.where(qb.parsedFrom(searchTerm))).stream()
-      .on('data', function(document) {
-        console.log('data :' + JSON.stringify(document));
-        ret.push(document);
-    }).on('end', function() {
-        console.log('REACHED THE END');
-    }).on('err', function(error) {
-        console.log('ERROR');
-    });
-    callback(ret);
-  */
   },
 
   err: function(error) {

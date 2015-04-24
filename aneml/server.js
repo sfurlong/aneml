@@ -9,7 +9,7 @@ var mlapp = require("./ml-db-search.js");
 app.use(express.static("public"));
 
 app.get('/', function(req, res) {
-  res.render('searchtweets.html');
+  res.send("try this url: <a href='http://localhost:3000/searchtweets.html'>http://localhost:3000/searchtweets.html</a>");
 });
 
 // SEARCH for Tweets!
@@ -53,6 +53,6 @@ var server = app.listen(3000, function() {
   var host = server.address().address;
   var port = server.address().port;
 
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('ANEML listening at http://%s:%s', host, port);
 
 });
