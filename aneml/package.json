@@ -1,6 +1,6 @@
 {
-  "name": "myapp",
-  "version": "0.0.0",
+  "name": "aneml",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,5 +13,21 @@
     "jade": "~1.9.2",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0"
-  }
+  },
+  "description": "example application of the ANEML stack",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfurlong/aneml.git"
+  },
+  "keywords": [
+    "aneml"
+  ],
+  "author": "steve furlong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sfurlong/aneml/issues"
+  },
+  "homepage": "https://github.com/sfurlong/aneml"
 }

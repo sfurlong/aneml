@@ -1,4 +1,6 @@
-//See Tutorial at http://expressjs.com/
+/*
+* Node.js Server for ANEML stack example application
+*/
 "use strict";
 
 var express = require("express");
