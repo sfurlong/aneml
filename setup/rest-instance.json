@@ -1,0 +1,11 @@
+{
+  "rest-api": 
+  {
+    "name": "tweet-deck",
+	"group": "Default",
+    "database": "tweet-deck-content",
+	"modules-database": "tweet-deck-modules",
+    "port": "9010",
+    "forests-per-host": 1
+  }
+}
