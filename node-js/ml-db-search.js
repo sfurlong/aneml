@@ -3,7 +3,7 @@
 // matching document. The descriptor includes the URI and the
 // the contents of each document.
 var marklogic = require('marklogic');
-var my = require('./my-connection.js');
+var my = require('./ml-connection.js');
 var domain = require('domain');
 
 module.exports = {
