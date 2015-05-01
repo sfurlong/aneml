@@ -1,21 +1,3 @@
-This is a sample application build on the ANEML stack (Angular, Node.js, Express, and MarkLogic) pronounced "animal".
+The purpose of this project is to demonstrate how developers can create a meaningful business application using the most agile and developer friendly stack for creating enterprise class, production ready applications.  The full development stack is referred to as ANEML (Angular, Node.js, Express, MarkLogic) and is pronounced “Animal”.  
 
-The framework was constructed using this website as a guide: 
-http://expressjs.com/starter/installing.html
-
-There are two components:
-1.  Node.js Server.  This code is in ./myapp/server.js
-	To start the server type: "node server.js"
-	It will now be listening at: 3000 
-	Port is specified in server.js
-
-2.  Angular JS Client.  This code is in ./index.html and ./script.js
-
-3.  Install MarkLogic Node.js development client
-	sudo npm install marklogic
-	*See detailed instructions in the ML node-dev.pdf Developers Documentation
-
-TO RUN THE DEMO:
-1. Run the server node ./myapp/server.js
-
-2. Open Index.html in a browser window
+Please see the attached README.docx or README.pdf for a complete overview of the project and step-by-step instructions to deploy and execute.
