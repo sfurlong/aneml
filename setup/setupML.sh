@@ -1,4 +1,4 @@
-
+# Change the environment variables below for your specific environment
 ADMIN_UID=admin
 ADMIN_PWD=marklogic1
 ML_HOST=localhost
