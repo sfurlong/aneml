@@ -1,0 +1,9 @@
+## The objective of this query is to answer the following question:
+## .....
+
+PREFIX fur: <http://www.some-ficticious-zoo.com/rdf#>
+
+SELECT *
+WHERE { ?s fur:species  ?p;
+       fur:name ?class .
+      }
